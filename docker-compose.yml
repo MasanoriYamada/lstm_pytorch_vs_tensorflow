@@ -1,0 +1,15 @@
+version: '2.3'
+
+services:
+  lstm_check:
+    build: ./
+    container_name: "lstm_check"
+    working_dir: "/workspace"
+    #runtime: nvidia
+    volumes:
+    - .:/workspace
+    tty: true
+
+
+
+
